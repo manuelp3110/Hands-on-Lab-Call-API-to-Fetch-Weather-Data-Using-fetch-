@@ -4,15 +4,26 @@
   <title>Weather Report</title>
 </head>
 <body>
-   <h1>Weather Report</h1>
+  <h1>Weather Report</h1>
 
+  <!-- Original city form -->
   <form id="weatherForm">
     <label for="city">Enter City:</label>
     <input type="text" id="city" name="city">
     <button type="submit">Get Weather</button>
   </form>
 
+  <!-- New lat/lon form -->
+  <h2>Search by Coordinates</h2>
+  <form id="coordForm">
+    <label for="lat">Latitude:</label>
+    <input type="text" id="lat" placeholder="e.g. 32.7767"><br><br>
+    <label for="lon">Longitude:</label>
+    <input type="text" id="lon" placeholder="e.g. -96.7970"><br><br>
+    <button type="submit">Get Weather by Coordinates</button>
+  </form>
+
   <div id="weatherInfo"></div>
-<script src="./weather_report.js"></script>
+  <script src="./weather_report.js"></script>
 </body>
 </html>
